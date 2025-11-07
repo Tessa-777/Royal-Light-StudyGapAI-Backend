@@ -20,10 +20,11 @@
 3. **Configure Service**
    - **Name**: `studygapai-backend` (or your choice)
    - **Environment**: `Python 3`
+   - **Python Version**: Set to `3.11.9` in Render dashboard (Settings → Python Version)
    - **Region**: Choose closest to your users
    - **Branch**: `main` (or your default branch)
    - **Root Directory**: Leave empty (root of repo)
-   - **Build Command**: `pip install -r requirements.txt`
+   - **Build Command**: `pip install --upgrade pip && pip install -r requirements.txt`
    - **Start Command**: `gunicorn backend.app:app --bind 0.0.0.0:$PORT`
 
 4. **Set Environment Variables**
