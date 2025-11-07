@@ -28,7 +28,7 @@ It combines **Flask**, **Supabase**, and **Gemini AI** to provide real-time diag
 | **Database** | Supabase (PostgreSQL) | Data storage, auth & row-level security |
 | **AI Integration** | Gemini API (Google) | Diagnostic & study plan generation |
 | **Frontend** | React / Flutter (optional for demo) | Student interface |
-| **Hosting** | Railway / Render / Supabase Edge Functions | Deployment |
+| **Hosting** | Render.com (Recommended) | Deployment |
 | **Version Control** | Git + GitHub | Collaboration & tracking |
 
 ---

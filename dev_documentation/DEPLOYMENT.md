@@ -1,31 +1,26 @@
-## Deploying StudyGapAI Backend to Railway
+## Deploying StudyGapAI Backend
 
-### Prerequisites
-- Railway account
-- Supabase project with the schema defined in the project brief
-- Google Gemini API key
+### Current Deployment: Render.com
 
-### Environment Variables
-Set these variables in Railway service settings:
+See **[RENDER_DEPLOYMENT.md](./RENDER_DEPLOYMENT.md)** for complete Render.com deployment guide.
 
-- `FLASK_ENV=production`
-- `SECRET_KEY=<secure-random-string>`
-- `SUPABASE_URL=<your-supabase-url>`
-- `SUPABASE_ANON_KEY=<your-supabase-key>`
-- `USE_IN_MEMORY_DB=false`
-- `GOOGLE_API_KEY=<gemini-api-key>`
-- `AI_MODEL_NAME=gemini-2.0-flash-exp`
-- `AI_MOCK=false`
-- `PORT` is provided by Railway
+### Quick Start
 
-### Build & Start
-Railway will install from `requirements.txt` and run:
+1. Sign up at https://render.com
+2. Connect GitHub repository
+3. Create Web Service
+4. Set environment variables
+5. Deploy!
 
-```
-web: gunicorn backend.app:app --workers=2 --timeout=120 --bind 0.0.0.0:$PORT
-```
+### Legacy: Railway Deployment (Deprecated)
 
-### Health Check
-Use `GET /health` for Railway health checks.
+Railway free tier has frequent build timeouts. We recommend using Render.com instead.
 
+For Railway deployment (if needed):
+- See old Railway docs in git history
+- Or upgrade to Railway paid tier
+
+---
+
+**Recommended**: Use Render.com - faster builds, more reliable free tier.
 

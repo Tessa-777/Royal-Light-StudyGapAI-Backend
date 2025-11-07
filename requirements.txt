@@ -1,5 +1,3 @@
-# Production dependencies only - optimized for Railway deployment
-# Pinned versions for faster builds and reproducibility
 Flask==3.0.3
 gunicorn==21.2.0
 supabase==2.6.0
@@ -11,4 +9,3 @@ Flask-Cors==5.0.0
 python-dotenv==1.0.1
 PyJWT==2.9.0
 cryptography==43.0.3
-
